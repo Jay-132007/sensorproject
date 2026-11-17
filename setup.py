@@ -7,7 +7,9 @@ trigger setup.py using req.txt : write -e. in req.txt ---> run req.txt
 hence -e. is not a package : when we run setup.py it should be removed 
 """
 
-hypen_e= '-e.'
+hypen_e= '-e.' # variable 
+
+
 def get_requirements(file_path:str)->List[str]:
     requirements =[]
     with open(file_path) as f:
